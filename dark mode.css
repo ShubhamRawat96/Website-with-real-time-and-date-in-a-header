@@ -1,0 +1,42 @@
+/* Light Mode Styles (default) */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-image {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+  /* Eye Comfort Mode Styles */
+  body.eye-comfort-mode {
+    background-color: #f5e5c0;  /* A warm, sepia-like tone */
+    color: #5a4630;  /* A warm dark brown text color */
+  }
+  

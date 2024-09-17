@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll.com</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <h2>Scroll <small>.com</small></h2>
+            <div class="datetime">
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+        </div>
+        <div class="menu">
+            <button class="menu-btn" id="menuToggle">
+                <img src="icons8-menu-50.png" alt="Menu" width="30px" height="30px">
+            </button>
+            <ul id="dropdownMenu" class="hidden">
+                <li><a href="#"><img src="home.png" alt="Home Icon" class="menu-icon"> Home</a></li>
+                <li><a href="#"><img src="customer-service.png" alt="Service Icon" class="menu-icon"> Service</a></li>
+                <li><a href="#"><img src="profile.png" alt="About Icon" class="menu-icon"> About</a></li>
+                <li><a href="#"><img src="contact-mail.png" alt="Contact Icon" class="menu-icon"> Contact</a></li>
+                <li><a href="#"><img src="blogging.png" alt="Blog Icon" class="menu-icon"> Blog</a></li>
+                <li><a href="#"><img src="portfolio.png" alt="Portfolio Icon" class="menu-icon"> Portfolio</a></li>
+                <li><a href="#"><img src="editi profile.png" alt="Profile Icon" class="menu-icon"> Edit Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <div class="container">
+        <!-- Images for toggling modes -->
+        <img id="darkModeToggle" src="moon_4867841.png" alt="Toggle Dark Mode" class="toggle-image">
+        <img id="eyeComfortToggle" src="profile.png" alt="Toggle Eye Comfort Mode" class="toggle-image">
+      </div>
+    <div id="login">
+        <h3>Login Page</h3>
+        <form>
+            <label for="Name">
+                <input type="text" id="Text" name="Name" placeholder="Enter your name" autocomplete="off">
+            </label>
+            <label for="password">
+                <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off">
+            </label>
+            <label for="Re-password">
+                <input type="password" id="re-password" name="re-password" placeholder="Re-enter your password" autocomplete="off">
+            </label>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+   
+</body>
+</html>

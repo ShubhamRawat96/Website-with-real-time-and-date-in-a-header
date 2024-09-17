@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-image {
+    width: 50px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.datetime {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-btn img {
+    cursor: pointer;
+}
+
+#dropdownMenu {
+    list-style-type: none;
+    background-color: #444;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#dropdownMenu li {
+    padding: 10px;
+}
+
+#dropdownMenu li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#dropdownMenu li a:hover {
+    background-color: #555;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Hidden by default */
+.hidden {
+    display: none;
+}
+
+#login {
+    background-color: white;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease; /* Transition for box shadow */
+}
+
+/* Form Title */
+#login h3 {
+    text-align: center;
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+/* Label Styles */
+#login label {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+    transition: color 0.5s ease; /* Smooth transition for label color */
+}
+
+/* Input Styles */
+#login input[type="text"],
+#login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border and shadow */
+}
+
+/* Focus Effect for Inputs */
+#login input[type="text"]:focus,
+#login input[type="password"]:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Adds shadow when focusing on inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Button Styles */
+#login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background color and transform */
+}
+
+/* Button Hover and Focus Effect */
+#login button:hover {
+    background-color: #555; /* Change button color on hover */
+    transform: translateY(-3px); /* Slight lift effect when hovered */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+}
+
+#login button:focus {
+    outline: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for button focus */
+}
+
+/* Form Container Hover Effect */
+#login:hover {
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2); /* More pronounced shadow when hovering over the form */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode #login {
+    background-color: #1e1e1e;
+}
+
+/* Eye Comfort Mode */
+body.eye-comfort-mode {
+    background-color: #f5e5c0;
+    color: #4b4b4b;
+}
+
+body.eye-comfort-mode #login {
+    background-color: #f9eacb;
+}
